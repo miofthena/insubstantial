@@ -15,13 +15,13 @@
 <resources>
   <property name="jnlp.packEnabled" value="true"/>
   <j2se version="1.6+" />
-  <jar href="substance-tst.jar"/>
-  <jar href="substance.jar"/>
   <jar href="substance-tools.jar"/>
   <jar href="forms-1.2.0.jar"/>
   <extension name="trident-core" href="http://insubstantial.github.com/halberd/webstart/trident-core.jnlp"/>
   <jar href="substance-swingx.jar"/> <!-- FIXME -->
   <jar href="swingx.jar"/> <!-- FIXME -->
+    <jar href="substance-tst.jar"/>
+    <jar href="substance.jar"/>
 </resources>
 <application-desc main-class="test.Check" />
 </jnlp>
