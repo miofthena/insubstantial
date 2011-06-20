@@ -2794,6 +2794,10 @@ public class SubstanceScrollBarUI extends BasicScrollBarUI implements
 		}
 	}
 
+    public ButtonModel getThumbModel() {
+        return thumbModel;
+    }
+
 	/**
 	 * Composite button model that tracks changes to one primary and any number
 	 * of secondary button models for composite rollover effects. This model can

@@ -214,7 +214,7 @@ public class SubstanceInternalFrameUI extends BasicInternalFrameUI {
 	 * 
 	 * @return Title pane of the associated internal frame.
 	 */
-	public SubstanceInternalFrameTitlePane getTitlePane() {
+	public JComponent getTitlePane() {
 		return titlePane;
 	}
 

@@ -1,3 +1,6 @@
+apply plugin: 'idea'
+
+
 buildscript {
 	repositories {
 		mavenCentral()
@@ -10,6 +13,7 @@ buildscript {
 subprojects {
   apply plugin: 'java'
   apply plugin: 'maven'
+  apply plugin: 'idea'
   try {
     def test = pgpSecretKeyRingFile // exception will throw if not set
     apply plugin: 'sign'
@@ -17,7 +21,7 @@ subprojects {
   } catch (Exception ignore) {}
 
   group = 'com.github.insubstantial'
-  version = '6.3-SNAPSHOT'
+  version = '6.3.0.1'
   versionKey = "6.3-defender"
   release = "internal"
 
