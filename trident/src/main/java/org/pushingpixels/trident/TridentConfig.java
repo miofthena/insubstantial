@@ -116,7 +116,9 @@ public class TridentConfig {
 							} catch (NoClassDefFoundError ncdfe) {
 								// trying to initialize a plugin with a missing
 								// class
-							}
+							} catch (ClassNotFoundException cnfe){
+                                //ignore # for mac startup
+                            }
 						}
 						if ("PropertyInterpolatorSource".compareTo(key) == 0) {
 							try {
@@ -150,7 +152,9 @@ public class TridentConfig {
 							} catch (NoClassDefFoundError ncdfe) {
 								// trying to initialize a plugin with a missing
 								// class
-							}
+							}  catch (ClassNotFoundException cnfe){
+                                //ignore # for mac startup
+                            }
 						}
 					}
 				} finally {
