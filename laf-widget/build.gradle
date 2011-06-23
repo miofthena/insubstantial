@@ -22,12 +22,7 @@ uploadArchives {
   }
   repositories {
     mavenDeployer {
-      snapshotRepository(url: "https://oss.sonatype.org/content/repositories/snapshots/") {
-        authentication userName: deployUsername, password: deployPassword
-      }
-      repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/") {
-        authentication userName: deployUsername, password: deployPassword
-      }
+      repository(url: "http://devtest_java:81/artifactory/libs-releases-local")
       configurePOM(pom)
     }
   }
